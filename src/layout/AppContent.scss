@@ -1,0 +1,11 @@
+@import '../App.scss';
+
+.content-wrapper {
+    // min-height: 150vh;
+    padding: $app-padding;
+}
+
+.item-card {
+    display: flex;
+    flex-direction: row;
+}

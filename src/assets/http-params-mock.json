@@ -1,0 +1,18 @@
+{
+    "httpParameters": [
+        {
+            "key": "http.accept.ranges",
+            "displayName": "Accept Ranges in bytes/kilobytes",
+            "Type": "Header",
+            "HttpParameterName": "Accept-Ranges",
+            "namespace": "HTTP"
+        },
+        {
+            "key": " http.cachecontrol",
+            "displayName": "cache control in Max-age Ex:2592000",
+            "Type": "cookie",
+            "HttpParameterName": "cache-control",
+            "namespace": "generic"
+        }
+    ]
+}

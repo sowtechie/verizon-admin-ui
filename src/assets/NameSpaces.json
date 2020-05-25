@@ -1,0 +1,16 @@
+{
+    "NameSpaces": [
+        {
+            "key": "http.accept.ranges",
+            "displayName": "Accept Ranges in bytes/kilobytes"
+        },
+        {
+            "key": " http.cachecontrol",
+            "displayName": "cache control in Max-age Ex:2592000"
+        }, 
+         {
+            "key": " http.cachecontrol.xyz",
+            "displayName": "cache control in Max-age Ex:2592000.xyz"
+        }
+    ]
+}

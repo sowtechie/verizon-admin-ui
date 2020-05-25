@@ -1,6 +1,6 @@
 import React from "react";
 import './AppContent.scss';
-import Namespaces from "../components/Namespaces";
+import Namespaces from "./../components/Namespaces";
 import EditNamespace from "../components/EditNamespace";
 
 export class AppContent extends React.Component {

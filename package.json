@@ -16,6 +16,7 @@
     "@types/react-router-dom": "^5.1.5",
     "bootstrap": "^4.4.1",
     "connected-react-router": "^6.8.0",
+    "material-table": "^1.57.2",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
@@ -47,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
   }
 }

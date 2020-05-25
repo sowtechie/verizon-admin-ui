@@ -1,7 +1,22 @@
 import React from "react";
 import "./EditNamespace.scss";
+import { Button } from "@material-ui/core";
 
 export default class EditNamespace extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = { key: '', displayName: '', Type: '', HttpParameterName: '', namespace: '' };
+    }
+
+    createNewParam() {
+        console.log('create new param');
+
+    };
+
+    handleChange(event) {
+        this.setState({ key: event.target.value });
+    }
 
     render() {
         const httpParameters = [
@@ -57,7 +72,7 @@ export default class EditNamespace extends React.Component {
         return (
             <div className="content-wrapper">
                 <h2 className="header">
-                    Create Namespace
+                    Create/Update Namespace
                 </h2>
                 <hr></hr>
                 <div>
@@ -71,6 +86,7 @@ export default class EditNamespace extends React.Component {
                                 </label>
                             </div>
                             <input type="text" name="key" />
+                            {/* <input type="text" name="key" onChange={this.handleChange} value={this.state.key} /> */}
                         </div>
                         <div className="form-field">
                             <div>
@@ -80,7 +96,7 @@ export default class EditNamespace extends React.Component {
                                     </span>
                                 </label>
                             </div>
-                            <input type="text" name="key" />
+                            <input type="text" name="displayName" />
                         </div>
                         <div className="form-field">
                             <div>
@@ -113,12 +129,18 @@ export default class EditNamespace extends React.Component {
                                     </span>
                                 </label>
                             </div>
-                            <input type="text" name="key" />
+                            <select>
+                                <option value="NS1">Namespace1</option>
+                                <option value="NS2">Namespace2</option>
+                            </select>
                         </div>
-                        <input className="submit-button" type="submit" value="Submit" />
+                        <div className="submit-button">
+                            <Button onClick={this.createNewParam} variant="contained">Create</Button>
+                        </div>
                     </form>
                 </div>
             </div>
         )
     }
 }
+
